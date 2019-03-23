@@ -14,7 +14,7 @@
   - This interface would be near perfect, the remaining effort after
     ought to go towards reimplementing that interface in a
     performance-friendly way. Don't worry about optimization too much
-    yet though. Time complexity is as good as a naive solution could
-    be ATM ( O(i_1 * i_2 * ... * i_n ) where i_n is the number of
-    instances of the nth ~superclass-list~ ).
+    yet though. Time complexity is O(i_1 * i_2 * ... * i_n ) where i_n is
+    the number of instances of the nth ~superclass-list~ which is as
+    good as it can be as far as I know.
   
