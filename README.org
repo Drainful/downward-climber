@@ -1,4 +1,4 @@
-* TODO
+* To-Do
 ** Game object code
 - Implement apply-system
 - Think about if a sleeker interface is even necessary.
