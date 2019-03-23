@@ -1,6 +1,6 @@
-* To-Do
-** Game object code
-- Implement apply-system
+* =TODO=
+** TODO Game object code
+*** TODO Implement apply-system
 - Think about if a sleeker interface is even necessary.
   - Theoretically a ~define-game-system~ wrapper on defun (but with
     ~apply-system~ semantics for the lambda list) could read that pseudo
@@ -14,7 +14,7 @@
   - This interface would be near perfect, the remaining effort after
     ought to go towards reimplementing that interface in a
     performance-friendly way. Don't worry about optimization too much
-    yet though. Time complexity is O(i_1 * i_2 * ... * i_n ) where i_n is
-    the number of instances of the nth ~superclass-list~ which is as
+    yet though. Time complexity is O(i_1 * i_2 * ... * i_n) where i_n is
+    the number of subclasses of the nth ~superclass-list~ which is as
     good as it can be as far as I know.
   
