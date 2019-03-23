@@ -1,5 +1,7 @@
 * =TODO=
 ** TODO Game object code
+*** TODO Automatically insert new instances of game object into the map
+Can be done simply by wrapping ~make-instance~.
 *** TODO Implement apply-system
 - Think about if a sleeker interface is even necessary.
   - Theoretically a ~define-game-system~ wrapper on defun (but with
@@ -9,8 +11,9 @@
 
     You could go all out and create a DSL to express the dependency
     graph of the systems and automatically create a suitable
-    order. ~apply-system~ would still be available for manual control
-    (and to collect results theoretically)
+    order. You could be inspired by the class definition syntax in
+    that regard. ~apply-system~ would still be available for manual
+    control (and to collect results theoretically)
   - This interface would be near perfect, the remaining effort after
     ought to go towards reimplementing that interface in a
     performance-friendly way. Don't worry about optimization too much
