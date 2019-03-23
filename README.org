@@ -1,0 +1,20 @@
+* TODO
+** Game object code
+- Implement apply-system
+- Think about if a sleeker interface is even necessary.
+  - Theoretically a ~define-game-system~ wrapper on defun (but with
+    ~apply-system~ semantics for the lambda list) could read that pseudo
+    lambda list and register the function in a parameter. Then, a
+    seperate function could call all systems.
+
+    You could go all out and create a DSL to express the dependency
+    graph of the systems and automatically create a suitable
+    order. ~apply-system~ would still be available for manual control
+    (and to collect results theoretically)
+  - This interface would be near perfect, the remaining effort after
+    ought to go towards reimplementing that interface in a
+    performance-friendly way. Don't worry about optimization too much
+    yet though. Time complexity is as good as a naive solution could
+    be ATM ( O(i_1 * i_2 * ... * i_n ) where i_n is the number of
+    instances of the nth ~superclass-list~ ).
+  

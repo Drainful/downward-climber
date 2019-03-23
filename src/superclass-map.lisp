@@ -56,7 +56,7 @@ provided, and the intersection of the given sets is found."
                   superclasses)))
 
 (defun update-superclass-map (class superclass-map)
-  "Update a superclass map for a given class so that it contains the
+  "Update a superclass map for a given class (not class symbol) so that it contains the
    correct objects for each class"
 
   (let ((removed-objects nil)) ; create a list to contain removed objects
