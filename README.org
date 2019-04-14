@@ -1,8 +1,9 @@
 * =TODO=
-** TODO Game object code
-*** TODO Automatically insert new instances of game object into the map
+** TODO Game logic systems
+** DONE Game object code 
+*** DONE Automatically insert new instances of game object into the map
 Can be done simply by wrapping ~make-instance~.
-*** TODO Implement apply-system
+*** DONE Implement apply-system
 - Think about if a sleeker interface is even necessary.
   - Theoretically a ~define-game-system~ wrapper on defun (but with
     ~apply-system~ semantics for the lambda list) could read that pseudo
