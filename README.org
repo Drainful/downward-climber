@@ -1,4 +1,5 @@
-* =TODO=
+WIP
+* COMMENT =TODO=
 ** TODO Game logic systems
 ** DONE Game object code 
 *** DONE Automatically insert new instances of game object into the map
